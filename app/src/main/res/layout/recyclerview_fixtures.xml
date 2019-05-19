@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textViewHomeTeam"
+                    android:name="com.example.invernessct.fragments.FixturesFragment"
+                    android:text="Home "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textViewAwayTeam"
+                    android:name="com.example.invernessct.fragments.FixturesFragment"
+                    android:text="Away "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:name="com.example.invernessct.fragments.FixturesFragment"
+                    android:text="Date "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textViewTime"
+                    android:name="com.example.invernessct.fragments.FixturesFragment"
+                    android:text="Time "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/textViewStadium"
+                    android:name="com.example.invernessct.fragments.FixturesFragment"
+                    android:text="Stadium "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

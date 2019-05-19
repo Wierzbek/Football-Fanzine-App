@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#99002675">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/imageViewPost"/>
+                <TextView
+                    android:id="@+id/textViewPostTitle"
+                    android:layout_below="@id/imageViewPost"
+                    android:name="com.example.invernessct.fragments.SquadFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="25dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/textViewPostCategory"
+                    android:layout_below="@id/textViewPostDate"
+                    android:name="com.example.invernessct.fragments.SquadFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/textViewPostAuthor"
+                    android:layout_below="@id/textViewPostCategory"
+                    android:name="com.example.invernessct.fragments.SquadFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#D4AF37"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/textViewPostContent"
+                    android:layout_below="@id/textViewPostAuthor"
+                    android:name="com.example.invernessct.fragments.SquadFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:textSize="15dp"
+                    android:layout_margin="5dp"
+                    android:paddingBottom="10dp"/>
+                <TextView
+                    android:id="@+id/textViewPostDate"
+                    android:layout_below="@id/textViewPostTitle"
+                    android:name="com.example.invernessct.fragments.SquadFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10dp"
+                    android:textColor="#D3D3D3"/>
+            </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.UserProfile"
+    android:orientation="vertical"
+    android:background="#F0E68C">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:text="Your Profile"/>
+                <TableRow>
+                    <TextView
+                        android:textSize="20dp"
+                        android:text="First Name:"/>
+                    <TextView
+                        android:id="@+id/textViewUserFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:text="Name"
+                        android:name="com.example.invernessct.fragments.UserProfile"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textSize="20dp"
+                        android:text="Last Name:"/>
+                    <TextView
+                        android:id="@+id/textViewUserLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="Last name"
+                        android:textSize="20dp"
+                        android:name="com.example.invernessct.fragments.UserProfile"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textSize="20dp"
+                        android:text="Email: "/>
+                    <TextView
+                        android:id="@+id/textViewUserEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="email@email.com"
+                        android:textSize="20dp"
+                        android:name="com.example.invernessct.fragments.UserProfile"/>
+                </TableRow>
+                <TableRow>
+                    <TextView
+                        android:textSize="20dp"
+                        android:text="User type: "/>
+                    <TextView
+                        android:id="@+id/textViewUseType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type"
+                        android:textSize="20dp"
+                        android:textColor="#000000"/>
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:textSize="20dp"
+                        android:text="Reg. date: "/>
+                    <TextView
+                        android:id="@+id/textViewUserRegistered"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Registered"
+                        android:textSize="20dp"
+                        android:textColor="#000000"/>
+                </TableRow>
+            </TableLayout>
+            <Button
+                android:id="@+id/buttonBuyPremium"
+                android:text="Buy Premium £7.99"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFA500"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:text="Update credentials"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:layout_marginTop="15dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Last name"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Last name"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Email"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Password"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Confirm Password"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm password"/>
+                <Button
+                    android:id="@+id/buttonUpdateUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update"/>
+                <Button
+                    android:id="@+id/buttonDeleteUser"
+                    android:background="@color/invernessRed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Account"
+                    android:layout_marginBottom="15dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

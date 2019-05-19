@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="190dp"
+                    android:layout_height="270dp"
+                    android:id="@+id/imageViewPlayer"
+                    android:adjustViewBounds="true"/>
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imageViewPlayer">
+                    <TextView
+                        android:id="@+id/textViewPlayerName"
+                        android:name="com.example.invernessct.fragments.SquadFragment"
+                        android:layout_width="21dp"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/imageViewPlayer"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+                <TableRow>
+
+                    <TextView
+                        android:layout_height="match_parent"
+                        android:text="No." />
+                    <TextView
+                        android:id="@+id/textViewPlayerNo"
+                        android:textColor="#000000"
+                        android:name="com.example.invernessct.fragments.SquadFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="DoB "/>
+                    <TextView
+                        android:id="@+id/textViewPlayerDoB"
+                        android:text="Date of Birth: "
+                        android:name="com.example.invernessct.fragments.SquadFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Place of birth"/>
+                    <TextView
+                        android:id="@+id/textViewPlaceOfBirth"
+                        android:text="Place of birth: "
+                        android:name="com.example.invernessct.fragments.SquadFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Age "/>
+                    <TextView
+                        android:id="@+id/textViewPlayerAge"
+                        android:text="Age: "
+                        android:name="com.example.invernessct.fragments.SquadFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Height "/>
+                    <TextView
+                        android:id="@+id/textViewPlayerHeight"
+                        android:text="Height: "
+                        android:name="com.example.invernessct.fragments.SquadFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:text="Citizenship " />
+                    <TextView
+                        android:id="@+id/textViewPlayerCitizenship"
+                        android:text="Citizenship: "
+                        android:name="com.example.invernessct.fragments.SquadFragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"/>
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Position "/>
+                    <TextView
+                        android:id="@+id/textViewPlayerPosition"
+                        android:text="Position: "
+                        android:name="com.example.invernessct.fragments.SquadFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Foot "/>
+                    <TextView
+                        android:id="@+id/textViewPlayerFoot"
+                        android:text="Foot: "
+                        android:name="com.example.invernessct.fragments.SquadFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Joined "/>
+                    <TextView
+                        android:id="@+id/textViewPlayerJoined"
+                        android:text="Joined: "
+                        android:name="com.example.invernessct.fragments.SquadFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+                <TableRow>
+                    <TextView android:text="Contract until "/>
+                    <TextView
+                        android:id="@+id/textViewPlayerContract"
+                        android:text="Contract until: "
+                        android:name="com.example.invernessct.fragments.SquadFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
